@@ -3,14 +3,14 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Start Bootstrap</span></a>
+                <a class="navbar-brand" href="<%= root_path %>"><span class="fw-bolder text-primary">Javi's Portfolio</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                      <li class="nav-item"><a class="nav-link" href="<%= root_path %>">Home</a></li>
+                      <li class="nav-item"><a class="nav-link" href="<%= pages_resume_path %>">Resume</a></li>
+                      <li class="nav-item"><a class="nav-link" href="<%= pages_projects_path %>">Projects</a></li>
+                      <li class="nav-item"><a class="nav-link" href="<%= pages_contact_path %>">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -23,30 +23,44 @@
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Project Card 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">Project Name 1</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                    </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Project Card 2-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5">
-                                        <h2 class="fw-bolder">Project Name 2</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                    </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
-                                </div>
-                            </div>
-                        </div>
+                      <!-- Project Card 1: Elevate App -->
+                      <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                          <div class="card-body p-0">
+                              <div class="d-flex align-items-center">
+                                  <div class="p-5">
+                                      <h2 class="fw-bolder">Elevate App</h2>
+                                      <p>Created an MVP educating young individuals in Latin America on early pregnancies and preventable illnesses. Coordinated tasks using Trello to ensure efficient workflow and timely delivery. Built and tested backend systems, implementing REST APIs for authentication and chatbot responses. Integrated Stripe for secure payment processing for appointments. Utilized PostgreSQL and API integrations to streamline data flow and enhance reliability.</p>
+                                  </div>
+                                  <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="Elevate App" />
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Project Card 2: EasyCart App -->
+                      <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                          <div class="card-body p-0">
+                              <div class="d-flex align-items-center">
+                                  <div class="p-5">
+                                      <h2 class="fw-bolder">EasyCart App</h2>
+                                      <p>Designed automated order processing workflows to optimize system efficiency and user experience. Built and tested backend workflows using REST APIs for authentication. Collaborated in an Agile environment, working with structured workflows to enhance product reliability. Integrated automated processes to streamline data flow. Enhanced front-end design using Bootstrap for a modern, responsive UI.</p>
+                                  </div>
+                                  <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="EasyCart App" />
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Project Card 3: Arose AI App -->
+                      <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                          <div class="card-body p-0">
+                              <div class="d-flex align-items-center">
+                                  <div class="p-5">
+                                      <h2 class="fw-bolder">Arose AI App</h2>
+                                      <p>Built and launched a custom website for Arose AI, an AI agency specializing in automation solutions. Created engaging visuals and optimized design for a modern, responsive user experience. Integrated Calendly for appointment scheduling and streamlined user interactions. Implemented automation features to enhance business efficiency. Currently adding payment integrations, such as Stripe, Voice Agent, and Chatbot, to help business growth.</p>
+                                  </div>
+                                  <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="Arose AI App" />
+                              </div>
+                          </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -61,23 +75,4 @@
             </div>
         </section>
     </main>
-    <!-- Footer-->
-    <footer class="bg-white py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
-                <div class="col-auto">
-                    <a class="small" href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
 </body>

@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style>
-      /* Email styles need to be inline */
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Javi's Portfolio</title>
+
+    <!-- CSRF Meta Tags -->
+    <%= csrf_meta_tags %>
+
+    <!-- Content Security Policy Meta Tags -->
+    <%= csp_meta_tag %>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="" />
+
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Custom CSS (Core theme) -->
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <!-- Core JS (using Import Maps for Rails 7) -->
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
