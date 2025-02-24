@@ -591,6 +591,12 @@ progress {
   height: auto;
 }
 
+.project-img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
