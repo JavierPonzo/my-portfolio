@@ -21,7 +21,8 @@ RUN apt-get update -qq && \
     libpq-dev \
     libvips \
     pkg-config \
-    python-is-python3
+    python-is-python3\
+    libjemalloc2
 
 COPY Gemfile Gemfile.lock ./
 RUN bundle install && \
